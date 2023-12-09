@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content="width=device-width, initial-scale = 1">
+		<meta name="author" content="Geovana Perazzo, Naira Ingrid e Thiago Gonçalves" />
+		<meta name="Keywords" content="plam, marcenaria, móveis, planejados, armários, móveis planejados" />
+		<meta name="description" content="Móveis Planejados,Construção em casa" /> 
+		<title>PLAM Marcenaria</title>
+		<link rel="stylesheet" type="text/css" href="estiloPlam.css">
+
+	</head>
+
+	<body>
+
+		<nav id="nav-menu">
+			<ul id = "ul-menu">
+				<li><a class="a-menu" href="indexPlam.html">HOME</a></li>
+				<li><a class="a-menu" href="indexPlam.html#pag-catalogo">CATÁLOGO</a></li>
+				<li><a class="a-menu" href="indexPlam.html#pag-vantagens">VANTAGENS</a></li>
+				<li><a class="a-menu" href="indexPlam.html#pag-historico">SOBRE NÓS</a></li>
+				<li><a class="a-menu" href="#pag-depoimentos">DEPOIMENTOS</a></li>
+				<li><a class="a-menu" href="#pag-contatos">CONTATOS</a></li>
+			</ul>
+		</nav>
+
+		<header>
+			<img src="img/bannerY.png" alt="banner do site contendo uma cozinha com duas janelas de vidro sem móveis, contendo apenas linhas brancas formando os móveis planejados"/>
+		</header>
+
+		<main id = "pag-depoimentos">
+			<h1> Veja o que os clientes estão comentando!</h1>
+				<div id="container">
+					<div class=	"card-depoimentos">
+						<p>"Minha sala ficou linda!! Tudo saiu conforme o prometido. Recomendo o trabalho." Luís Pereira- São Paulo/SP</p>
+					</div>
+
+					<div class=	"card-depoimentos">
+		            	<p>"O senhor Edilson é muito simpático! Faço os meus móveis com ele há anos. É um excelente profissional!" Sandra Santos -Osasco/SP</p>
+		        	</div>
+
+					<div class=	"card-depoimentos">
+		            	<p>"Amei o serviço! Já indiquei a vários amigos!" Eliana Lima -Santos/SP</p>
+		                
+	            	</div>
+
+	            	<div class=	"card-depoimentos">
+						<video src="video/cozinha3.mp4"  controls="controls" preload="auto"> 
+		         		</video>
+					</div>
+	            </div>
+		</main>
+
+			<nav id= "pag-contatos">
+
+				<h1>Nossos Contatos:</h1>	
+
+					<div class="container-imagens">
+						
+						<img class="img-icones" src="img/logotelefone.png" alt="logo do telefone"/> 
+						<p>(11) 9 6285-5972</p>
+
+						<a href="http://instagram.com/plam_marcenaria" target="_blank">
+							<img class="img-icones" src="img/logoinsta.png" alt="logo do instagram com link que vai direcionar para  página instagram"/> 
+						</a>
+						<p>@plam_marcenaria</p>
+
+						<a href="mailto: plam.marcenaria@gmail.com"> 
+							<img class="img-icones" src="img/logoemail.png" alt="logo do email com link que vai direcionar para envio de email"/>
+						</a>
+						<p>plam.marcenaria@gmail.com</p>
+					</div>
+
+				<h1>Mande sua mensagem!</h1>
+
+				<form name="frm-agendar" method="GET" action="">
+
+					<label for="nome">Nome:</label>
+					<input id="nome"  type="text" name="nome" required placeholder="Digite seu nome completo" />
+
+					<label for="email">E-mail:</label>
+					<input id="email"  type="email" name="email" placeholder="seuemail@email.com" />
+
+					<label for="celular">Celular:</label>
+					<input id="celular"  type="tel" name="celular" required placeholder="(99) 99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+					<label for="msg">Mensagem</label>
+					<textarea id="msg" cols="52" rows="4">
+					</textarea>
+
+					<div id="botoes-form">
+						<input type="submit" name="btn-enviar" value="Enviar" /> 
+						<input type="reset" name="btn-cancelar" value="Cancelar" /> 
+					</div>
+				</form>
+			</nav>
+
+			<footer>
+				<p>PLAM Marcenaria - Desenvolvido por  Geovana Perazzo e Naira Ingrid - 2023</p>
+			</footer>
+	</body>
+</html>

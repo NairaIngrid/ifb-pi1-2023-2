@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
+
+*{
+	margin: 0; padding: 0;
+}
+
+body{
+	background-color: rgb(255,255,255);
+}
+
+section{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 6vh 28vh 35vh 30vh 30vh 6vh;
+	/*grid-template-rows: 6vh 20vh 36vh 32vh 30vh 6vh;*/
+	grid-template-areas:"t t" 
+						"h h"
+						"m m"
+						"n n"
+						"nv nv" 
+						"f f";
+}
+
+#nav-menu{
+	background-color: #A58061;
+	grid-area: t;
+}
+
+
+#ul-menu{
+	list-style-type: none;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+li{
+	color: #777;
+	font-size: 2rm;
+	margin-right: 40px;
+	font: 1.2rem 'Roboto', sans-serif;
+	margin-bottom: 10px;
+
+}
+
+a{
+	font: 1rem 'Roboto', sans-serif;
+	text-decoration: none;
+
+}
+
+.a-menu{
+	margin-right: 40px;
+ 	font-weight: bold; 
+}
+
+.a-menu:link /*carregado*/, .a-menu:visited /*visitado*/ {
+	color:#FFF;
+} 
+
+.a-menu:hover,/*quando passa o mouse sobre*/.a-menu:active { /*clicado*/
+	color:#5D3B3B;
+}
+
+
+header{
+
+	grid-area: h;
+	width: 100%;
+	height: 200px;
+}
+
+img{
+
+	width: 100%;
+	height: 100%;
+}
+
+main{
+	width: 100%;
+	background-color: #F5F5F5;
+	
+}
+
+#pag-catalogo{
+	background-color:#F2F2F2;
+	grid-area: m;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+h1{
+	font: 2.5rem 'Roboto', cursive;
+	color: #5D3B3B;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+#container{
+	display: flex;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
+	flex-wrap: wrap-reverse;
+}
+
+.card{ 
+	background-color: #FFF;
+	height: 150px;
+	margin:10px;
+	width:12%;
+	border-radius: 8px;/*arredonda as bordas*/
+	box-shadow: 0 4px 8px #CCC; /*sombreado, para lado direito- valor negativo*/
+	transition: 0.1s;/*tempo do efeito de transição para o hover*/
+}
+
+.card-content{
+	padding: 5px;
+}
+.card:hover{
+	box-shadow: 0 8px 16px #CCC;
+}
+
+.card-content p{
+	font: 1rem 'Roboto' sans-serif;
+	line-height: 20px;/*espacamento entre letras*/
+	font-weight: bold;
+
+}
+
+.card img{
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+}
+
+h2{
+	font: 1rem 'Roboto', cursive;
+	color: #5D3B3B;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#pag-vantagens{
+
+	background-color: #F2F2F2; 
+	grid-area: n;
+	padding: 35px;
+	box-sizing: border-box;
+	margin-bottom: 0.5em;
+	height: 100%;
+}
+
+#ul-vantagens{
+
+	list-style-type: circle;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: justify;
+}
+
+
+#pag-historico{
+
+	background-color:#F2F2F2; 
+	grid-area: nv;
+	padding: 25px;
+	box-sizing: border-box;
+}
+
+
+p{
+	font: 1rem 'Roboto', sans-serif;
+	color: #777;
+	text-align: justify;
+	line-height: 30px;/*espacamento entre letras*/
+	margin: 0.5em 0;
+}
+
+
+#txt-preto{
+	color: #000;
+}
+
+
+footer{
+	background-color: #A58061;;
+	width: 100%;
+	height: 40px;
+	grid-area: f;
+}
+
+
+footer p{
+	font: 1rem 'Roboto', cursive;
+	text-align: center;
+	color: #FFF;
+}
+
+
+/* PAGINA DE CONTATOS*/
+
+
+#pag-depoimentos{
+	background-color:#F2F2F2; 
+	align-items: center;
+
+}
+
+.card-depoimentos{ /*como está dentro da div, não precisa formatar as imagens separadas*/
+	background-color: #F0E6DE;
+	height: 160px;
+	margin:20px;
+	width:22%;
+	display: flex;
+	border-radius: 8px;/*arredonda as bordas*/
+	box-shadow: 0 4px 8px #CCC; /*sombreado, para lado direito- valor negativo*/
+	transition: 0.1s;/*tempo do efeito de transição para o hover*/
+}
+
+.card-depoimentos p {
+	font: 1.5rem 'Kaushan Script' sans-serif;
+	font-weight: bold;
+	padding: 10px;
+}
+
+video{
+	width: 400px;
+}
+
+
+#pag-contatos{
+	background-color:#FFF;
+
+}
+
+
+form{
+	width: 400px;
+	margin: 0 auto; /*centraliza*/
+
+}
+
+input, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+	color: #777;
+}
+label, input, textarea{
+	font: 1rem 'Roboto' sans-serif;
+}
+
+
+textarea{
+	height: 80px;
+}
+
+#botoes-form{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	/*margin: 20px;*/
+	background-color: #173518;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px
+}
+
+input[type="reset"]{
+	background-color: #7E1010;
+}
+
+.container-imagens{
+	margin: 20px;
+	display: flex;
+	justify-content: center;/*centraliza o container*/
+	align-items: center; /*centraliza os itens do container*/
+
+}
+.container-imagens p{
+	color: #000;
+}
+
+.img-icones{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 430px){
+
+}
